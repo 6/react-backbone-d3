@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta chartset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React + Backbone + D3 Sample</title>
+
+  <!-- Vendor files -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/react/0.8.0/react.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/react/0.8.0/JSXTransformer.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.1/d3.min.js"></script>
+</head>
+<body>
+  <div class="graph-container"></div>
+
+  <script type="text/jsx">
+    /** @jsx React.DOM */
+    React.renderComponent(
+      <h1>Hello, world!</h1>,
+      document.querySelector('.graph-container')
+    );
+  </script>
+</body>
+</html>
