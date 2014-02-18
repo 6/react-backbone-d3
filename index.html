@@ -10,15 +10,19 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.1/d3.min.js"></script>
+
+  <!-- Backbone model & React view -->
+  <script src="graph_model.js"></script>
+  <script src="graph_view.js"></script>
 </head>
 <body>
   <div class="graph-container"></div>
 
   <script>
-    React.renderComponent(
-      React.DOM.h1({}, "Hello, world!"),
-      document.querySelector('.graph-container')
-    );
+    var model = new GraphModel({title: "Hello, world!"}),
+        view = GraphView({model: model});
+
+    React.renderComponent(view, document.querySelector('.graph-container'));
   </script>
 </body>
 </html>
