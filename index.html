@@ -7,7 +7,6 @@
 
   <!-- Vendor files -->
   <script src="http://cdnjs.cloudflare.com/ajax/libs/react/0.8.0/react.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/react/0.8.0/JSXTransformer.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.1/d3.min.js"></script>
@@ -15,10 +14,9 @@
 <body>
   <div class="graph-container"></div>
 
-  <script type="text/jsx">
-    /** @jsx React.DOM */
+  <script>
     React.renderComponent(
-      <h1>Hello, world!</h1>,
+      React.DOM.h1({}, "Hello, world!"),
       document.querySelector('.graph-container')
     );
   </script>
