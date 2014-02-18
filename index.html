@@ -10,6 +10,7 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.1/d3.min.js"></script>
+  <script src="vendor/backbone_mixin.js"></script>
 
   <!-- Backbone model & React view -->
   <script src="graph_model.js"></script>
@@ -23,6 +24,8 @@
         view = GraphView({model: model});
 
     React.renderComponent(view, document.querySelector('.graph-container'));
+
+    model.set("title", "Hello world 2!");
   </script>
 </body>
 </html>
