@@ -1,3 +1,4 @@
+// This will re-render the React view on any model/collection changes
 var BackboneMixin = {
   componentDidMount: function() {
     this._boundForceUpdate = this.forceUpdate.bind(this, null);
